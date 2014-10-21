@@ -35,22 +35,22 @@ Documents, RDoc & RI documentation for %{name}.
 
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
+# %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast
+# %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
