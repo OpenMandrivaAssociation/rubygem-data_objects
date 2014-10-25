@@ -17,15 +17,15 @@ BuildArch:	noarch
 Provide a standard and simplified API for communicating with RDBMS from Ruby.
 
 %files
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 #-------------------------------------------------------------------------------------
 
 %package	doc
@@ -37,8 +37,8 @@ Requires:	%{name} = %{EVRD}
 Documents, RDoc & RI documentation for %{name}.
 
 %files doc
-%{ruby_gemdir}/doc/%{rbname}-%{version}
-%{ruby_gemdir}/gems/%{rbname}-%{version}/*.markdown
+%{gem_dir}/doc/%{rbname}-%{version}
+%{gem_dir}/gems/%{rbname}-%{version}/*.markdown
 #-------------------------------------------------------------------------------------
 
 %prep
