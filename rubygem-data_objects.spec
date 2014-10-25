@@ -1,11 +1,11 @@
-# Generated from data_objects-0.10.7.gem by gem2rpm5 0.6.5 -*- rpm-spec -*-
+
 %define	rbname	data_objects
 
 Summary:	DataObjects basic API and shared driver specifications
 Name:		rubygem-%{rbname}
 
-Version:	0.10.7
-Release:	2
+Version:	0.10.14
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://github.com/datamapper/do
@@ -14,7 +14,19 @@ BuildRequires:	rubygems
 BuildArch:	noarch
 
 %description
-Provide a standard and simplified API for communicating with RDBMS from Ruby
+Provide a standard and simplified API for communicating with RDBMS from Ruby.
+
+%files
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
+%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+#-------------------------------------------------------------------------------------
 
 %package	doc
 Summary:	Documentation for %{name}
@@ -23,6 +35,11 @@ Requires:	%{name} = %{EVRD}
 
 %description	doc
 Documents, RDoc & RI documentation for %{name}.
+
+%files doc
+%{ruby_gemdir}/doc/%{rbname}-%{version}
+%{ruby_gemdir}/gems/%{rbname}-%{version}/*.markdown
+#-------------------------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -33,37 +50,8 @@ Documents, RDoc & RI documentation for %{name}.
 %install
 %gem_install
 
-%files
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/error/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/error/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/data_objects/spec/shared/typecast/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
-
-%files doc
-%{ruby_gemdir}/doc/%{rbname}-%{version}
-%{ruby_gemdir}/gems/%{rbname}-%{version}/*.markdown
 
 
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.10.7-2
-+ Revision: 774161
-- mass rebuild of ruby packages against ruby 1.9.1
 
-* Tue Jan 24 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.10.7-1
-+ Revision: 767848
-- imported package rubygem-data_objects
+
 
