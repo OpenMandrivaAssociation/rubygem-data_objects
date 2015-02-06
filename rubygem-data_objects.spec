@@ -5,7 +5,7 @@ Summary:	DataObjects basic API and shared driver specifications
 Name:		rubygem-%{rbname}
 
 Version:	0.10.14
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://github.com/datamapper/do
