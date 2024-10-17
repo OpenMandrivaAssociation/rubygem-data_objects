@@ -8,7 +8,7 @@ Version:	0.10.14
 Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://github.com/datamapper/do
+URL:		https://github.com/datamapper/do
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
